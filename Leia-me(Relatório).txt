@@ -1,0 +1,46 @@
+Leia-me
+===========================================================================
+Trabalho referente a disciplina Organização de Estrutura de Arquivos
+Professor: Renato Mauro
+Aluno: Matheus Felipe Souza da Silva
+Matrícula: 1621887BCC
+
+===========================================================================
+Utilização:
+
+Via prompt de comando:
+O arquivo bolsa deve estar dentro da pasta principal do projeto.
+informe como "args0" a sigla UF desejada. Em seguida o programa iniciará a separar os dados referentes a
+UF desejada (a operação pode demorar mais de uma hora) em um arquivo diferente. Neste momento também
+será criádo um arquivo de index no formato:
+
+NIS - Long representando a posição no arquivo original - Long representando a posição no arquivo local.
+
+A seguir será iniciado o processo de ordenação do arquivo de index(por ordem crescente de NIS) para
+facilitar uma busca através de busca binária. A primeira etapa é separar o arquivo index em partes menores
+(Diversos arquivos com 81920 registros) afim de facilitar a organização por parte do sort
+(organização automáticas de listas em Java). A partir daí, estas listas individuais são ordenadas e escritas em
+arquivos separados e em seguida deve-se unificar esses arquivos através da intercalação afim de criar o
+arquivo Index ordenado.
+
+===========================================================================
+Observações:
+
+Infelizmente não pude concluir o trabalho pois não consegui realizar a parte de intercalar todas as listas, todas
+as demais funções antes descritas funcionam corretamente(ou funcionaram em todos os testes).
+
+===========================================================================
+Ideia:
+
+A ideia original deste trabalho era, a partir do arquivo bolsa família criar um index para determinada UF afim
+de facilitar uma busca em qualquer um dos arquivos uma vez que no arquivo gerado contem informação de
+ambos. 
+
+===========================================================================
+Ideia anterior:
+
+Quanto a ideia anterior(sistema de banco), apesar de viável, seria mais complicado implementar em pouco
+tempo e sem recurso(base de dados), por isso optei por entregar este trabalho ainda que incompleto(com 
+erros)
+
+===========================================================================
